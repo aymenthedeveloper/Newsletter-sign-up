@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <title>Newsletter sign-up</title>
 </head>
 
 <body>
@@ -23,31 +23,25 @@
         <h1 class="title">Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on: </p>
         <div class="benefits">
-          <div class="check">
-            &check;
-          </div>
+          <img class="check" src="images/icon-list.svg" alt="">
           <p>
             Product discovery and building what matters
           </p>
         </div>
         <div class="benefits">
-          <div class="check">
-            &check;
-          </div>
+          <img class="check" src="images/icon-list.svg" alt="">
           <p>
             Measuring to ensure updates are a success
           </p>
         </div>
         <div class="benefits">
-          <div class="check">
-            &check;
-          </div>
+          <img class="check" src="images/icon-list.svg" alt="">
           <p>
             And much more!
           </p>
         </div>
         <form class="signup-form" method="post">
-          <label for="email">Email address</label>
+          <label for="email" data-msg="">Email address</label>
           <input type="email" name="email" id="email" value="" placeholder="email@company.com" required />
           <button onclick="redirect()" class="btn" type="button">Subscribe to monthly newsletter</button>
         </form>
@@ -59,7 +53,7 @@
 
     <div class="success_card" id="success">
       <div class="icon">
-        &check;
+        <img src="images/icon-success.svg" alt="">
       </div>
       <h1>Thanks for subscribing</h1>
       <p id="message">a confirmation emal has been sent to <b>email@company.com</b>. please open it and click the button inside to confirm your subscription.</p>

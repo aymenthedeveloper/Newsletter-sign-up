@@ -35,25 +35,20 @@
         .benefits {
           display: flex;
           gap: 10px;
-          align-items: flex-start;
+          align-items: center;
           margin-bottom: 10px;
         }
-
         .benefits .check {
-          margin-top: 1px;
-          color: white;
-          font-size: 12px;
-          padding: 1px 4px;
-          border-radius: 50%;
-          background-color: hsl(4, 100%, 67%)
+          width: 15px;
         }
 
         .illustration {
           flex: 1;
           min-width: 200px;
-          min-height: 250px;
+          min-height: 350px;
           border-radius: 15px;
-          background-color: hsl(4, 100%, 67%);
+          background-image: url(images/illustration-sign-up-desktop.svg);
+          background-size: cover;
         }
 
         .signup-form {
@@ -71,6 +66,15 @@
           padding: 12px 14px;
           margin: 8px 0 20px 0;
           border: 1px solid #ccc;
+        }
+        .signup-form input:valid{
+          background-color: initial;
+        }
+        .signup-form label::after{
+          content: attr(data-msg);
+          float: right;
+          color: red;
+          font-weight: normal;
         }
         .btn{
           border: none;
@@ -94,16 +98,6 @@
           background-color: #fff;
           width: 425px;
         }
-        .success_card .icon{
-          width: 40px;
-          height: 40px;
-          display: grid;
-          place-items: center;
-          color: white;
-          font-size: 16px;
-          border-radius: 50px;
-          background-color: hsl(4, 100%, 67%);
-        }
         .success_card h1{
           font-size: 52px;
           line-height: 45px;
@@ -118,6 +112,9 @@
           }
           .sign-up{
             padding: 0 25px;
+          }
+          .illustration {
+            background-image: url(images/illustration-sign-up-mobile.svg);
           }
         }
         @media screen and (max-width: 425px){
